@@ -1,0 +1,36 @@
+<div class="container-fluid">
+    <div class="row g-5">
+        <div class="col-col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+             <!-- bootstrap table -->
+             <div class="row g-3">
+                <div class="col-col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th scope="col">id</th>
+                                <th scope="col">name</th>
+                                <th scope="col">description</th>
+                                <th scope="col">price</th>
+                                <th scope="col">image</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr *ngFor="let i of viewAllRecipes">
+                                <th scope="row">{{i.id}}</th>
+                                <td>{{i.name}}</td>
+                                <td>{{i.description}}</td>
+                                <td>{{i.price}}</td>
+                                <td>{{i.image}}</td>
+                                <button class="btn btn-outline-danger"(click)="deleteRecipe(i.id)">delete</button>
+                            </tr>
+                    
+                        </tbody>
+                    </table>    
+
+                </div>
+             </div> 
+           
+        </div>
+    </div>
+</div>

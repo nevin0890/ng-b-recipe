@@ -1,0 +1,26 @@
+<div class="container-fluid">
+    <div class="row g-3">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-x">
+            <div class="row g-4">
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col xl-6 col-xxl-6">
+                    <input type="text" placeholder="Recipe Name"  class="form-control" name="name" [(ngModel)]="name">
+                </div>
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col xl-6 col-xxl-6">
+                    <input type="text" placeholder="Description" class="form-control" name="description" [(ngModel)]="description">
+                </div>
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col xl-6 col-xxl-6">
+                    <input type="number" placeholder="price" class="form-control" name="price" [(ngModel)]="price">
+                </div>
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col xl-6 col-xxl-6">
+                    <input type="text" placeholder="image" class="form-control" name="image" [(ngModel)]="image">
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col xl-12 col-xxl-12">
+                  <div class="class d-grid gap-2" >
+                    <button class="btn btn-outline-success " (click)="addAllRecipe()">Add</button>
+                  </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
